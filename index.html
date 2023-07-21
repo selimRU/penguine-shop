@@ -4,96 +4,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font robot links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/model.png" type="image/x-icon">
+    <!-- font bebas links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font awesome cdn links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- tailwind css link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Penguine Shop</title>
+    <style>
+        .bebas-font {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="bg-orange-100 pb-10">
-        <div class="  max-w-6xl mx-auto flex flex-row justify-between items-center gap-40">
-            <div class="w-1/2 mt-20">
-                <h1 class="text-6xl text-orange-400 font-bold my-5">BE THE PENGUINS</h1>
-                <h1 class="text-6xl font-bold my-5">OF WINTER</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <button class=" bg-lime-400 px-10 py-5 rounded-lg mt-5 text-yellow-50"><i
-                        class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+    <header class="bg-orange-100 pb-10 px-3 md:px-5 lg:px-0">
+        <!-- nav part -->
+        <nav>
+            <div class="flex flex-col md:flex-row py-9 md:py-9 justify-center max-w-6xl mx-auto items-center">
+                <div class="md:w-1/2">
+                    <img class="md:w-1/2" src="./icons/logo.png" alt="">
+                </div>
+                <div
+                    class="w-1/2 flex flex-col md:flex-row md: justify-center gap-5 items-center font-bold font-roboto">
+                    <a  href="">Home</a>
+                    <a  href="">Products</a>
+                    <a  href="">About us</a>
+                    <a  href="">Contact us</a>
+                </div>
             </div>
-            <div class="w-1/2 mt-20">
-                <img src="./images/model.png" alt="">
-            </div>
-        </div>
-    </div>
-    <section>
-        <div class="max-w-6xl mx-auto mt-10 mb-10">
-            <h1 class="text-6xl">Woman Jackets</h1>
-            <div class=" grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div>
-                    <div class=" bg-slate-50 rounded-2xl p-10"><img src="./images/jacket-1.png" alt=""></div>
-                    <h1 class="text-2xl font-semibold">Yellow Coat Jacket</h1>
-                    <p class="text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <div class="flex flex-row items-center justify-between">
-                        <p class="text-3xl font-bold text-orange-300">$234</p>
-                        <button class=" bg-lime-400 px-10 py-5 rounded-lg mt-5 text-yellow-50"><i
-                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+        </nav>
+        <!-- banner part -->
+        <section>
+            <div>
+                <div class="max-w-6xl mx-auto flex flex-col md:flex-row w-full justify-between items-center gap-10">
+                    <div class="md:w-1/2 space-y-4">
+                        <h1 class="text-3xl md:text-7xl text-orange-400 font-bold bebas-font">BE THE PENGUINS</h1>
+                        <h1 class="text-3xl md:text-7xl font-bold bebas-font">OF WINTER</h1>
+                        <p class="font-roboto">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <button
+                            class=" bg-gradient-to-r from-green-500 to-lime-700 px-5 text-sm py-2  rounded-lg text-yellow-50"><i
+                                class="fa-solid fa-cart-plus"></i> BUY NOW</button>
                     </div>
-                </div>
-                <div>
-                    <div class=" bg-slate-50 rounded-2xl p-10"><img src="./images/jacket-1.png" alt=""></div>
-                    <h1 class="text-2xl font-semibold">Yellow Coat Jacket</h1>
-                    <p class="text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <div class="flex flex-row items-center justify-between">
-                        <p class="text-3xl font-bold text-orange-300">$234</p>
-                        <button class=" bg-lime-400 px-10 py-5 rounded-lg mt-5 text-yellow-50"><i
-                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
-                    </div>
-                </div>
-                <div>
-                    <div class=" bg-slate-50 rounded-2xl p-10"><img src="./images/jacket-1.png" alt=""></div>
-                    <h1 class="text-2xl font-semibold">Yellow Coat Jacket</h1>
-                    <p class="text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <div class="flex flex-row items-center justify-between">
-                        <p class="text-3xl font-bold text-orange-300">$234</p>
-                        <button class=" bg-lime-400 px-10 py-5 rounded-lg mt-5 text-yellow-50"><i
-                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
-                    </div>
-                </div>
-                <div>
-                    <div class=" bg-slate-50 rounded-2xl p-10"><img src="./images/jacket-1.png" alt=""></div>
-                    <h1 class="text-2xl font-semibold">Yellow Coat Jacket</h1>
-                    <p class="text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <div class="flex flex-row items-center justify-between">
-                        <p class="text-3xl font-bold text-orange-300">$234</p>
-                        <button class=" bg-lime-400 px-10 py-5 rounded-lg mt-5 text-yellow-50"><i
-                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
-                    </div>
-                </div>
-                <div>
-                    <div class=" bg-slate-50 rounded-2xl p-10"><img src="./images/jacket-1.png" alt=""></div>
-                    <h1 class="text-2xl font-semibold">Yellow Coat Jacket</h1>
-                    <p class="text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <div class="flex flex-row items-center justify-between">
-                        <p class="text-3xl font-bold text-orange-300">$234</p>
-                        <button class=" bg-lime-400 px-10 py-5 rounded-lg mt-5 text-yellow-50"><i
-                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
-                    </div>
-                </div>
-                <div>
-                    <div class=" bg-slate-50 rounded-2xl p-10"><img src="./images/jacket-1.png" alt=""></div>
-                    <h1 class="text-2xl font-semibold">Yellow Coat Jacket</h1>
-                    <p class="text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <div class="flex flex-row items-center justify-between">
-                        <p class="text-3xl font-bold text-orange-300">$234</p>
-                        <button class=" bg-lime-400 px-10 py-5 rounded-lg mt-5 text-yellow-50"><i
-                                class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+                    <div class="w-8/12 md:w-1/2">
+                        <img class="" src="./images/model.png" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </header>
+    <!-- main part starts -->
+    <main>
+        <!-- women's jacket part -->
+        <section>
+            <div class="max-w-6xl mx-auto mt-10 mb-10">
+                <h1 class="text-3xl text-center mb-5 font-bold bebas-font">Women's Jackets</h1>
+                <div class="mb-4 px-12 md:px-5 lg:px-0 md:gap-4 grid md:grid-cols-2 lg:grid-cols-3">
+                    <div class="space-y-7 mb-3  rounded-lg p-4 shadow-lg shadow-slate-200">
+                        <div class=" bg-slate-50 rounded-2xl p-10"><img src="./images/jacket-1.png" alt=""></div>
+                        <h1 class="text-xl md:text-2xl font-semibold text-center font-roboto">Yellow Coat Jacket</h1>
+                        <p class="text-sm text-center font-roboto">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
+                            industry.</p>
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                            <div>
+                                <p class="text-xl md:text-3xl font-bold text-orange-300 font-roboto">$234</p>
+                            </div>
+                            <button
+                                class="text-sm bg-gradient-to-r from-orange-400 to-orange-500 px-5 py-2 rounded-lg text-yellow-50"><i
+                                    class="fa-solid fa-cart-plus"></i> BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="space-y-7 mb-3  rounded-lg p-4 shadow-lg shadow-slate-200">
+                        <div class="bg-slate-50 rounded-2xl p-10"><img src="./images/jacket-2.png" alt=""></div>
+                        <h1 class="text-xl md:text-2xl font-semibold text-center font-roboto">Yellow Coat Jacket</h1>
+                        <p class="text-sm text-center font-roboto">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
+                            industry.</p>
+                        <div class="flex flex-col md:flex-row items-center justify-between">
+                            <p class="text-xl md:text-3xl font-bold text-orange-300 font-roboto">$234</p>
+                            <button
+                                class="text-sm bg-gradient-to-r from-orange-400 to-orange-500 px-5 py-2 rounded-lg text-yellow-50"><i
+                                    class="fa-solid fa-cart-plus"></i></i> BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="space-y-7 mb-3 rounded-lg p-4 shadow-lg shadow-slate-200">
+                        <div class=" bg-slate-50 rounded-2xl p-10"><img src="./images//jacket-3.png" alt=""></div>
+                        <h1 class="text-xl md:text-2xl font-semibold text-center font-roboto">Yellow Coat Jacket</h1>
+                        <p class="text-sm text-center font-roboto">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
+                            industry.</p>
+                        <div class="flex flex-col md:flex-row items-center justify-between">
+                            <p class="text-xl md:text-3xl font-bold text-orange-300 font-roboto">$234</p>
+                            <button
+                                class="text-sm bg-gradient-to-r from-orange-400 to-orange-500 px-5 py-2 rounded-lg text-yellow-50"><i
+                                    class="fa-solid fa-cart-plus"></i> BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- men's jacket part -->
+                <h1 class="text-3xl text-center mb-5 font-bold bebas-font">Men's Jackets</h1>
+                <div class="mb-4 px-12 md:px-0 md:gap-4 grid md:grid-cols-2 lg:grid-cols-3">
+                    <div class="space-y-7 mb-3 rounded-lg p-4 shadow-lg shadow-slate-200">
+                        <div class=" bg-slate-50 rounded-2xl p-10"><img src="./images/jacket-4.png" alt=""></div>
+                        <h1 class="text-xl md:text-2xl font-semibold text-center font-roboto">Yellow Coat Jacket</h1>
+                        <p class="text-sm text-center">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <div class="flex flex-col md:flex-row items-center justify-between">
+                            <p class="text-xl md:text-3xl font-bold text-orange-300 font-roboto">$234</p>
+                            <button
+                                class="text-sm bg-gradient-to-r from-orange-400 to-orange-500 px-5 py-2 rounded-lg text-yellow-50"><i
+                                    class="fa-solid fa-cart-plus"></i> BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="space-y-7 mb-3 rounded-lg p-4 shadow-lg shadow-slate-200">
+                        <div class=" bg-slate-50 rounded-2xl p-10"><img src="./images/jacket-5.png" alt=""></div>
+                        <h1 class="text-xl md:text-2xl font-semibold text-center font-roboto">Yellow Coat Jacket</h1>
+                        <p class="text-sm text-center font-roboto">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
+                            industry.</p>
+                        <div class="flex flex-col md:flex-row items-center justify-between">
+                            <p class="text-xl md:text-3xl font-bold text-orange-300 font-roboto">$234</p>
+                            <button
+                                class="text-sm bg-gradient-to-r from-orange-400 to-orange-500 px-5 py-2 rounded-lg text-yellow-50"><i
+                                    class="fa-solid fa-cart-plus"></i> BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="space-y-7 mb-3 rounded-lg p-4 shadow-lg shadow-slate-200">
+                        <div class=" bg-slate-50 rounded-2xl p-10"><img src="./images/jacket-6.png" alt=""></div>
+                        <h1 class="text-xl md:text-2xl font-semibold text-center font-roboto">Yellow Coat Jacket</h1>
+                        <p class="text-sm text-center font-roboto">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
+                            industry.</p>
+                        <div class="flex flex-col md:flex-row items-center justify-between">
+                            <p class="text-xl md:text-3xl font-bold text-orange-300 font-roboto">$234</p>
+                            <button
+                                class="text-sm bg-gradient-to-r from-orange-400 to-orange-500 px-5 py-2 rounded-lg text-yellow-50"><i
+                                    class="fa-solid fa-cart-plus"></i> BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- contact part -->
+            <div class="px-12 max-w-6xl mx-auto justify-between items-center my-24 flex flex-col md:flex-row gap-6 ">
+                <div class="md:w-1/2 space-y-6">
+                    <div
+                        class="flex flex-col md:flex-row gap-4 items-center p-6 md:w-9/12 rounded-3xl shadow-lg shadow-slate-200">
+                        <div class="w-16">
+                            <img src="./icons/house.png" alt="">
+                        </div>
+                        <div class="space-y-1 font-roboto">
+                            <p class="text-lg font-bold">Find the Perfect Fit</p>
+                            <p class="text-sm">Everybody is different, which is why we
+                                offer styles for every body.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col md:flex-row gap-4 items-center p-6 md:w-9/12 rounded-3xl shadow-lg shadow-slate-200">
+                        <div class="w-16">
+                            <img src="./icons/box.png" alt="">
+                        </div>
+                        <div class="space-y-1 font-roboto">
+                            <p class="text-lg font-bold">Free Exchanges</p>
+                            <p class="text-sm">One of the many reasons you can shop
+                                with peace of mind.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col md:flex-row gap-4 items-center p-6 md:w-9/12 rounded-3xl shadow-lg shadow-slate-200">
+                        <div class="w-16">
+                            <img src="./icons/question.png" alt="">
+                        </div>
+                        <div class="space-y-1 font-roboto">
+                            <p class="text-lg font-bold">Contact Our Seller</p>
+                            <p class="text-sm">They are here to help you. That's quite
+                                literally what we pay them for.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="images/shopping.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
